@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LIFESCOPE Voice</title>
+    <meta name="description" content="LIFESCOPE Voice">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <app-nav></app-nav>
+        <app-view>
+          <app-content>
+              <div id="voice">
+                    <phrase-item
+                      v-for="item in phraseList"
+                      v-bind:phrase="item"
+                      v-bind:key="item.id">
+                    </phrase-item>
+                  </ol>
+                </div>
+          </app-content>
+        </app-view>
+      </div>
+      <script>
+        Vue.component('phrase-item', {
+          props: ['phrase'],
+          template: '<li>{{ phrase.text }}</li>'
+        })
+
+        var voice = new Vue({
+          el: '#voice',
+          data: {
+            phraseList: [
+              { id: 0, text: 'Who' },
+              { id: 1, text: 'What' },
+              { id: 2, text: 'When' }
+            ]
+          }
+        })
+      </script>
+  </body>
+</html>
