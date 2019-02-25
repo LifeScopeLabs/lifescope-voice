@@ -1,10 +1,10 @@
-# [LIFESCOPE-VOICE](https://github.com/LifeScopeLabs/lifescope-voice)
+# [LifeScope-VOICE](https://github.com/LifeScopeLabs/lifescope-voice)
 
 ## [Repository](https://github.com/LifeScopeLabs/lifescope-voice)
 
 (development phase, low priority)
 
-The LIFESCOPE API allows anyone to create a shared virtual space to access their memory and tell their stories.
+The LifeScope API allows anyone to create a shared virtual space to access their memory and tell their stories.
 
 This repo contains a series of voice command search applets written to extend the lifescope-app codebase as JS/Vue/Nuxt plugins.
 
@@ -26,7 +26,7 @@ Browser Web Speech API allows for speech recognition and synthesis support in Ch
 	- **MVP**: Structured search terms (who, what, when, where, why)
 	- Natural Language Processing.
 
-- Passively capture voice data (speech text and recording) and store in LIFESCOPE.
+- Passively capture voice data (speech text and recording) and store in LifeScope.
 - AI Storytelling.
 	- "Here were the highlights from your trip to Hawaii...."
 
